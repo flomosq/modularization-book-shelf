@@ -12,6 +12,7 @@ gem 'rubocop', require: false
 gem 'rubocop-rails', require: false
 
 group :development, :test do
+  gem 'annotate'
   gem 'byebug'
 end
 
@@ -19,6 +20,12 @@ group :development do
   gem 'listen', '~> 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+end
+
+group :test do
+  gem 'factory_bot_rails'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 4.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
