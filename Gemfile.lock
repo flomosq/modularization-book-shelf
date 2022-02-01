@@ -82,12 +82,17 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
+    faker (2.19.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.4)
     globalid (1.0.0)
       activesupport (>= 5.0)
     html_tokenizer (0.0.7)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
+    jbuilder (2.11.5)
+      actionview (>= 5.0.0)
+      activesupport (>= 5.0.0)
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -224,6 +229,8 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   factory_bot_rails
+  faker
+  jbuilder
   listen (~> 3.2)
   packwerk
   pg (>= 0.18, < 2.0)
